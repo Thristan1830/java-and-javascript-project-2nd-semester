@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Attendance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-logo">PALDO
+    </div>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+</nav>
+
+<div class="form">
+    <form id="loginForm">
+
+        <label>
+            Username:
+            <input type="text" id="username" required>
+        </label>
+
+        <label>
+            Password:
+            <input type="password" id="password" required>
+        </label>
+
+        <!-- Wrong password alert -->
+        <p id="wrongAlert" class="wrong-alert"></p>
+
+        <button type="submit">Submit</button>
+
+        <!-- Login timestamp -->
+        <p id="loginTime" class="login-time"></p>
+
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
